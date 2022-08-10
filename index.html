@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>EpilControl</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="cronos.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<div class="primary">
+	<body>
+		<header>
+			<div class="icon">
+				<a href="index.html"><img class="logo1" src="Epil_logo.png" width="200" height="200"></a>
+			</div>
+			<div class="titulo">
+				<img src="1.png" alt="EpilControl" width="700" height="100">
+			</div>
+
+			<nav class="menu">
+				<ul>
+					<li style="display: inline;"><a href="calendar.html">Calendario</a></li>
+					<li style="display: inline;"><a href="epilepsy.html">Epilepsia</a></li>
+					<li style="display: inline;"><a href="registro.html">Registro</a></li>
+					<li style="display: inline;"><a href="login.html">Inicia Sesión</a></li>
+				</ul>
+			</nav>
+		</header>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<section>
+	  <nav>
+	    <ul id="lateral"> <pre>
+	      <li>Epilepsia</li>
+	      	<dd><a href="epilepsy.html"> -Acerca de</a></dd> 
+	      <li>Loggeate</li>
+	      	<dd><a href="login.html"> -Inicia Sesión</a></dd>
+	      	<dd><a href="registro.html"> -Registrate</a></dd> </pre>
+	      
+	    </ul>
+	  </nav>
+	  
+	  <article id="center">
+	    	<div class="container">
+        <h5>EpilCronos</h5>
+        <p id="time"><span id="second">00</span>:<span id="tens">00</span></p>
+        <button id="btn-start">Inicia Crisis :C</button>
+        <button id="btn-stop">Pausar</button>
+        <button id="btn-reset">Fin Crisis :)</button>
+    </div>
+	  </article>
+	  <div class= "container2"> 
+	  		<h5>Duración total en segundos:</h5>
+	  		<p style="color: #fff;font-size: 5em;"><span id="enlapsed">00</span></p>
+	  		<p style="color: #fff;font-size: 5em;">Repeticiones: <br><span id="vecess">00</span></p>
+	  		<button id="btn-fin">Registrar evento</button>
+	  </div>
+
+	</section>
+
+	<footer>
+	  <p>Siguenos en:</p>
+	  	<img src="logo1.png" alt="Facebook" width="85" height="50">
+	  	<img src="logo2.png" alt="Instagram" width="50" height="50">
+	</footer>
+	</body>
+</div>
+</html>
