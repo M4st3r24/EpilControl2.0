@@ -6,6 +6,7 @@
  $db_name = "registro";
  $tbl_name = "register";
  
+ $username = $_POST['mail'];
  $form_pass = $_POST['password'];
  
  /*$hash = password_hash($form_pass, PASSWORD_BCRYPT); */
@@ -44,6 +45,12 @@
  echo "<br />" . "<h2>" . "Usuario Creado Exitosamente!" . "</h2>";
  echo "<h4>" . "Bienvenido: " . $_POST['name'] . "</h4>" . "<br><br>";
  echo "<h5>" . "Login: " . "<a href='login.html'>Login</a>" . "</h5>"; 
+
+     
+     $_SESSION['loggedin'] = true;
+     $_SESSION['username'] = $username;
+     $_SESSION['start'] = time();
+     $_SESSION['expire'] = $_SESSION['start'] + (5 * 60);
    }
  }
  mysqli_close($conexion)

@@ -78,6 +78,7 @@ section {
   text-decoration: none;
   display: -webkit-flex;
   display: flex;
+  color: whitesmoke;
   text-align: right ;
   list-style-type:circle;
 }
